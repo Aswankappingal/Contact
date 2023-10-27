@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../Frontend/images/pexels-jess-bailey-designs-788946.jpg);
+            background-size: cover;
+        }
+
+        #phonebook {
+            max-width: 300px;
+            padding: 60px;
+            border: 2px solid #b4adad;
+            border-radius: 5px;
+        }
+
+        #phonebook input[type="text"] {
+            width: 100%;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        #addContactBtn {
+            background-color:rgb(108, 107, 107);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contactList {
+            margin-top: 20px;
+        }
+
+        .contact-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .contact-actions {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-actions button {
+            background-color: rgb(108, 107, 107);
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-actions button.edit-button {
+            background-color: rgb(108, 107, 107);
+        }
+    </style>
+</head>
+<body>
+    <div id="phonebook">
+        <h1>Phonebook</h1>
+        <form action="" id="frm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name">
+        <br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" placeholder="Enter phone number">
+        <br>
+        <button id="addContactBtn" type="submit">Add Contact</button></form>
+        <div id="contactList" class="contact">
+            <h2>Contact List</h2>
+        </div>
+    </div>
+
+    <script src="../Frontend/contact.js">
+        // document.getElementById("addContactBtn").addEventListener("click", function() {
+        //     var name = document.getElementById("name").value;
+        //     var phoneNumber = document.getElementById("phoneNumber").value;
+        //     var contactList = document.getElementById("contactList");
+
+        //     var contactCard = document.createElement("div");
+        //     contactCard.className = "contact-card";
+        //     contactCard.innerHTML = `
+        //         <h3>Name: ${name}</h3>
+        //         <p>Phone Number: ${phoneNumber}</p>
+        //         <div class="contact-actions">
+        //             <button class="edit-button">Edit</button>
+        //             <button class="delete-button">Delete</button>
+        //         </div>
+        //     `;
+
+        //     contactList.appendChild(contactCard);
+        //     document.getElementById("name").value = ""; 
+        //     document.getElementById("phoneNumber").value = "";
+
+        //     var editButton = contactCard.querySelector(".edit-button");
+        //     editButton.addEventListener("click", function() {
+        //     });
+
+        //     var deleteButton = contactCard.querySelector(".delete-button");
+        //     deleteButton.addEventListener("click", function() {
+        //         contactList.removeChild(contactCard);
+        //     });
+        // });
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
